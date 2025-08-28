@@ -47,26 +47,28 @@ body {
 }
 .header h1 {
     font-size: 3rem;
-    color: white;
+    
     font-family: 'Oswald', sans-serif;
 }
 .header span{
     display: block;
-    font-size: 1.7rem;
-    color: black;
+    font-size: 1.5rem;
+    
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 40px;
 }
+
 .header p{
     display: block;
     font-size: 1.2rem;
-    color: azure;
+ 
     font-family: 'Montserrat', sans-serif;
     margin-top: 40px;
 }
+
 .header-text  button{
-    background-color: peru;
-    color: azure;
+    background-color: #f1d991;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -250,7 +252,7 @@ body {
     background-color: #333;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
 }
 .footer-info{
@@ -262,13 +264,13 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 .footer-links a{
     text-decoration: none;
-    color: white;
-    margin: 0 15px;
+    color: rgb(232, 249, 6);
+    margin: 0 10px;
     font-family: 'Montserrat', sans-serif;
 }
 .footer-info-nombre{
@@ -280,7 +282,149 @@ body {
     display: flex;
     flex-direction: row;
 }
-.footer-contacto li{
+
+.footer-contacto ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-contacto li a{
     margin: 0 10px;
     font-size: 1.2rem;
+    text-decoration: none;
+}
+/* Tablet (entre 768px y 1023px) */
+@media screen and (max-width: 1023px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .header span,
+  .header p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .tecnologias {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .habi-secciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habi-seccion-dos-img1 img,
+  .habi-seccion-dos-img2 img {
+    width: 180px;
+    position: static;
+    margin: 10px;
+  }
+
+  .habi-seccion-dos {
+    flex-direction: column;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .sobre-mi {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .sobre-mi-texto h2 {
+    font-size: 2rem;
+  }
+
+  .footer-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Móvil (menos de 768px) */
+@media screen and (max-width: 767px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    padding: 40px 15px;
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header span,
+  .header p {
+    font-size: 1rem;
+  }
+
+  .tecnologias {
+    font-size: 30px;
+    gap: 15px;
+  }
+
+  .tecnologias-icon-text {
+    font-size: 16px;
+  }
+
+  .habi-numero {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+
+  .habi-descrip h3 {
+    font-size: 1rem;
+  }
+
+  .habi-descrip p {
+    font-size: 0.9rem;
+  }
+
+  .habi-seccion-dos {
+    flex-direction: column;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .habi-seccion-dos-img1 img,
+  .habi-seccion-dos-img2 img {
+    width: 150px;
+    position: static;
+    margin: 10px;
+  }
+
+  .sobre-mi-texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .footer-links ul,
+  .footer-contacto ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-links a,
+  .footer-contacto li {
+    font-size: 0.95rem;
+  }
 }
